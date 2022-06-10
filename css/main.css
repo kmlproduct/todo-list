@@ -83,13 +83,14 @@ form button:hover{
     pointer-events: none;
 }
 
-.completed {
-    text-decoration: line-through;
-    opacity: 0.5;
-}
+
 .fall {
     transform: translateY(8rem) rotateZ( 20deg );
     opacity: 0 ;
+}
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
 }
 
 select{
@@ -108,20 +109,26 @@ select{
     overflow: hidden;
 }
 select{
-    margin: 10px;
-    width: 100px;
+    width: 150px;
     cursor: pointer;
-    color: #fda085; 
+    color: #fda085;
+    padding: 10px;
 } 
 .select::after{
     content: '\25BC';
     position: absolute;
-    background-color: #ecf665;
+    background-color: #e98165;
     top: 0;
     padding: 10px;
     right: 0;
     pointer-events: none;
+    transition: all .3s ease;
+   
     
+}
+.select:hover::after{
+    background-color: white;
+    color:#fda085; ;
 }
 
 
